@@ -1,27 +1,30 @@
-name: Push to Hugging Face Space
+name: Sync to Hugging Face Space
 
 on:
   push:
     branches:
-      - main  # or master if that's your default branch
+      - main
 
 jobs:
-  deploy-to-hf:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout GitHub Repo
         uses: actions/checkout@v3
 
-      - name: Set up Git
+      - name: Set Git Identity
         run: |
           git config --global user.email "mohammed.aswath07@gmail.com"
-          git config --global user.name "Mohammed-Aswath"
+          git config --global user.name "MohammedAswath"
 
-      - name: Push to Hugging Face Space
+      - name: Clone Hugging Face Space
         run: |
-          git clone https://MohammedAswath:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/MohammedAswath/mlops-crop-predictor
-          cp -r ./* mlops-crop-predictor/
-          cd mlops-crop-predictor
+          git clone https://MohammedAswath:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/MohammedAswath/mlops-crop-predictor hf-space
+
+      - name: Copy Code to HF Space
+        run: |
+          cp -r ./* hf-space/
+          cd hf-space
           git add .
-          git commit -m "🚀 Auto sync from GitHub"
+          git commit -m "🚀 Auto sync from GitHub" || echo "No changes to commit"
           git push
