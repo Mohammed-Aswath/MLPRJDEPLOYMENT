@@ -1,0 +1,23 @@
+name: Push to Hugging Face Spaces
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Push to Hugging Face Space
+        run: |
+          git config --global user.email "mohammed.aswath07@gmail.com"
+          git config --global user.name "Mohammed-Aswath"
+          git clone https://Mubharak:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/MohammedAswath/mlops-crop-predictor
+          cp -r * mlops-crop-predictor/
+          cd mlops-crop-predictor
+          git add .
+          git commit -m "Auto-update from GitHub" || echo "Nothing to commit"
+          git push
