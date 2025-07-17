@@ -6,24 +6,28 @@ on:
       - main
 
 jobs:
-  deploy:
+  deploy-to-huggingface:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GitHub Repo
         uses: actions/checkout@v3
 
-      - name: Set Git Identity
+      - name: Set up Git config
         run: |
           git config --global user.email "mohammed.aswath07@gmail.com"
-          git config --global user.name "MohammedAswath"
+          git config --global user.name "Mohammed Aswath"
 
-      - name: Clone Hugging Face Space
+      - name: Clone Hugging Face Repo
         run: |
           git clone https://MohammedAswath:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/MohammedAswath/mlops-crop-predictor hf-space
 
-      - name: Copy Code to HF Space and Push
+      - name: Copy files to Hugging Face repo
         run: |
-          cp -r ./* hf-space/
+          shopt -s extglob
+          cp -r !(hf-space) hf-space/
+
+      - name: Commit and Push to Hugging Face
+        run: |
           cd hf-space
           git add .
           git commit -m "🚀 Auto sync from GitHub" || echo "No changes to commit"
