@@ -21,9 +21,9 @@ jobs:
         run: |
           git clone https://MohammedAswath:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/MohammedAswath/mlops-crop-predictor hf-space
 
-      - name: Copy Code to HF Space
+      - name: Copy Code to Hugging Face Space (excluding hf-space)
         run: |
-          cp -r ./* hf-space/
+          rsync -av --exclude=hf-space ./ hf-space/
           cd hf-space
           git add .
           git commit -m "🚀 Auto sync from GitHub" || echo "No changes to commit"
