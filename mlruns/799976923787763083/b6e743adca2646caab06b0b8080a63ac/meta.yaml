@@ -1,0 +1,14 @@
+artifact_uri: file:///e:/MLOPSTaskPrj/mlruns/799976923787763083/b6e743adca2646caab06b0b8080a63ac/artifacts
+end_time: 1752730765456
+entry_point_name: ''
+experiment_id: '799976923787763083'
+lifecycle_stage: active
+run_id: b6e743adca2646caab06b0b8080a63ac
+run_name: SVM
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752730762410
+status: 3
+tags: []
+user_id: aswat

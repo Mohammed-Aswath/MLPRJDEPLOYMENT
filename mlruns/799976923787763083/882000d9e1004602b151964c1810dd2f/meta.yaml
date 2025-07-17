@@ -1,0 +1,14 @@
+artifact_uri: file:///e:/MLOPSTaskPrj/mlruns/799976923787763083/882000d9e1004602b151964c1810dd2f/artifacts
+end_time: 1752646774991
+entry_point_name: ''
+experiment_id: '799976923787763083'
+lifecycle_stage: active
+run_id: 882000d9e1004602b151964c1810dd2f
+run_name: RandomForest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752646771565
+status: 3
+tags: []
+user_id: aswat

@@ -1,0 +1,10 @@
+artifact_location: file:///e:/MLOPSTaskPrj/mlruns/799976923787763083/models/m-b0ba4330fc0d4ab89584dfe9ba4333a9/artifacts
+creation_timestamp: 1752731992282
+experiment_id: '799976923787763083'
+last_updated_timestamp: 1752731995531
+model_id: m-b0ba4330fc0d4ab89584dfe9ba4333a9
+model_type: null
+name: SVM_model
+source_run_id: 20af6f3dd0744c27b850b04962fe536b
+status: 2
+status_message: null

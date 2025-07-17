@@ -1,0 +1,10 @@
+artifact_location: file:///e:/MLOPSTaskPrj/mlruns/799976923787763083/models/m-e243fe7fde004bf5b9fc871ec67ada95/artifacts
+creation_timestamp: 1752732016929
+experiment_id: '799976923787763083'
+last_updated_timestamp: 1752732020148
+model_id: m-e243fe7fde004bf5b9fc871ec67ada95
+model_type: null
+name: RandomForest_model
+source_run_id: 4d2951b24e804dcfb26e965a01d2509f
+status: 2
+status_message: null

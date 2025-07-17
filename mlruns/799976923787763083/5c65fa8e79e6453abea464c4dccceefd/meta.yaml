@@ -1,0 +1,14 @@
+artifact_uri: file:///e:/MLOPSTaskPrj/mlruns/799976923787763083/5c65fa8e79e6453abea464c4dccceefd/artifacts
+end_time: 1752646771559
+entry_point_name: ''
+experiment_id: '799976923787763083'
+lifecycle_stage: active
+run_id: 5c65fa8e79e6453abea464c4dccceefd
+run_name: LogisticRegression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752646762208
+status: 3
+tags: []
+user_id: aswat

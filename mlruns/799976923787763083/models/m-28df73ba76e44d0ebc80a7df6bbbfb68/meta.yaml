@@ -1,0 +1,10 @@
+artifact_location: file:///e:/MLOPSTaskPrj/mlruns/799976923787763083/models/m-28df73ba76e44d0ebc80a7df6bbbfb68/artifacts
+creation_timestamp: 1752730784876
+experiment_id: '799976923787763083'
+last_updated_timestamp: 1752730787954
+model_id: m-28df73ba76e44d0ebc80a7df6bbbfb68
+model_type: null
+name: KNN_model
+source_run_id: c24be888ec82403ea73031383313b590
+status: 2
+status_message: null

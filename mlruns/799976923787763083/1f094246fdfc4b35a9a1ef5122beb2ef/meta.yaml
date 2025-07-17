@@ -1,0 +1,14 @@
+artifact_uri: file:///e:/MLOPSTaskPrj/mlruns/799976923787763083/1f094246fdfc4b35a9a1ef5122beb2ef/artifacts
+end_time: 1752730762406
+entry_point_name: ''
+experiment_id: '799976923787763083'
+lifecycle_stage: active
+run_id: 1f094246fdfc4b35a9a1ef5122beb2ef
+run_name: KNN
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752730759261
+status: 3
+tags: []
+user_id: aswat
